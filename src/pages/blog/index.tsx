@@ -12,11 +12,11 @@ export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>){
 				<article key={index}>
 					<Link to={`/blog/${file.frontmatter?.slug}`}>
 					<h3>{file.frontmatter?.title}</h3>
+					</Link>
 					<h5>{file.frontmatter?.author} in: {file.frontmatter?.category}</h5>
 					<h6>{file.frontmatter?.date}</h6>
 					<hr/>
 					<p>{file.excerpt}</p>
-					</Link>
 				</article>)}
 			</section>
     </Layout>

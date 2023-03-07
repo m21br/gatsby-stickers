@@ -10,7 +10,6 @@ interface IBlogPostProps {
 
 export default function BlogPost({data, children} : IBlogPostProps){
 	console.log(data);
-	console.log(children);
 	return (
 		<Layout title="">
 			<div> {children} </div>
